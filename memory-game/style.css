@@ -1,0 +1,95 @@
+.grid { 
+width: 500px;
+height: 450px;
+display: flex; 
+flex-wrap: wrap; 
+margin: 60px auto; 
+} 
+
+
+
+.grid img { 
+margin: 5px;
+width: 110px;
+height: 150px;
+transform-style: preserve-3d; 
+transition: transform 0.5s; 
+transform: scale(-1,1);
+border-radius: 10px;
+} 
+.audio{
+  display:none
+}
+.grid img.flip { 
+transform: rotateY(360deg); 
+} 
+
+
+
+.popup .playAgain {
+  background-color: rgb(197, 87, 67);
+  border-radius: 15px;
+  padding: 15px 25px;
+  position: absolute;
+  height: 50px;
+  bottom: 10%;
+  left: 90%;
+  box-shadow: 0 9px #999;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+  color: black;
+  font-size: 16px;
+  
+  border: none;
+  cursor: pointer;
+ 
+}
+
+.popup .playAgain:hover {
+  background-color: darkslateblue;
+  
+}
+
+.data { 
+display: flex; 
+justify-content: space-between; 
+padding: 20px 30px; 
+font-size: 23px; 
+} 
+
+.data span { 
+color: rgb(206, 121, 11);
+font-size: 30px; 
+}
+
+body{
+  background-image: url(https://p1.pxfuel.com/preview/955/426/445/paper-old-texture-parchment.jpg);
+  
+}
+
+div#heading{
+  text-align: center;
+  color: rgb(206, 40, 11);
+  animation-name: anim1;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes anim1{
+  0% {
+    color: rgb(206, 40, 11);
+    font-size: 15px;
+  }
+
+  50%{
+    color: rgb(206, 170, 11);
+    font-size: 17px;
+  }
+
+  100%{
+    color: rgba(116, 129, 1, 0.801);
+    font-size: 15px
+  }
+}
