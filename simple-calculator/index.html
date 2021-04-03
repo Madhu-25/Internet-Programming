@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Web App - Simple Interest Calculator</title>
+    <style>
+      body {background-color: grey;}
+      h1{color:black;
+        font-size: 25px;
+        text-indent: -1.5em;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;}
+      h3{color:black;
+          font-size: 15px;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+        
+      }
+      div#maindiv{ background-color: white;
+            color: black;
+            width: 600px;
+            height: 500px;
+            padding: 20px;
+            padding-left: 105px;
+            padding-right: 70px;
+            border-radius: 25px;
+            margin: 0 auto;
+            
+            font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+    </head>
+    <body>
+      <div id="maindiv">
+        <h1 align="center">Simple Calculator</h1><br/>
+        <form action="calculate" method="get">
+        <label for="operand1" > number 1 : </label><input type="number" name="operand1" id="operand1">  <br/><br/>
+        <label for="operand2">
+        number 2 : </label><input type="number" name="operand2" id="operand2"><br>
+        <div>
+          <label>
+            <br>
+            <h3>Select Operation: </h3>
+          <input type="radio" name="r1" value="add" />addition
+          <br />
+          </label>
+          <input type="radio" name="r2" value="sub" />subtraction 
+          <br />
+          <input type="radio" name="r3" value="mul" />multiplication
+          <br />
+          <input type="radio" name="r4" value="div" />division
+          <br /> 
+          </div>
+          <br>
+          <input type="submit" value="calculate" >
+          </form>
+
+      </div>
+    </body>
+    
+</html>
