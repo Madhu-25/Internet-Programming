@@ -1,0 +1,114 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SSN-IC</title>
+    <style>
+      a:link{
+        color : rgb(233, 218, 199);        
+      }
+
+      a:visited{
+        color : rgb(130, 206, 130);
+       
+      }
+
+      a:hover{
+        color : rgb(185, 67, 67);
+         
+      }
+      body {
+        background-image : url('https://photos.wikimapia.org/p/00/06/03/51/00_big.jpg');
+        font-family : Arial;
+        height: 100%;
+
+  
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+
+      h1{
+        color:rgb(97, 193, 206);
+        font-size: 23px;
+       
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      footer{
+        color : rgb(130, 206, 130);
+        font-size: 10px;
+        position: fixed;
+      }
+      
+      .picture{
+          
+          left:30%;
+          transform:translate(-50%);
+          position:absolute;
+          z-index:2;
+          animation: fly 10s linear infinite;
+
+     }
+
+      .picture img{
+        height : 150px;
+        width: 200px;
+      }
+              @keyframes fly{
+          0%{
+            transform: translateY(-5px);
+            left: 0px; top:400px;
+
+          }
+          25%{
+            transform: translateY(5px);
+            left:200px; top:300px;
+          }
+          50%{
+            transform : translateY(-5px);
+            left : 400px;
+            top: 400px;
+          }
+          75%{
+            transform: translateY(5px);
+            left: 600px; top:300px;
+          }
+          100%{
+          transform: translateY(-5px);
+          left: 800px; top: 400px;
+          
+        }
+        }
+
+    </style>
+  </head>
+  <body>
+    
+    <h1 align="center">SSN International Conference - 2021</h1></br>
+    <ul style="display:flex;list-style-type:none;flex-direction:row; margin-left: auto;margin-right:auto;">
+      <li style="padding:10px">
+          <a href="https://www.ssn.edu.in">
+          <img src="https://img.collegedekhocdn.com/media/img/institute/logo/e_blue_text_small.jpg" height="25px" width="50px" title="SSNCE">
+          </a>
+      </li>
+  <li style="padding:10px;">
+    <a href="home.html" style="border:3px solid rgb(47, 47, 153);" title="click here to view home page"> Home </a></li>
+    <li style="padding:10px;">    <a href="committee.html" style="border:3px solid rgb(47, 47, 153);" title="click here to view committee details"> Committee </a></li>
+    <li style="padding:10px;"><a href="papers.html" style="border:3px solid rgb(47, 47, 153);"> Call For papers </a></li>
+    <li style="padding:10px;">
+    <a href="dates.html" style="border:3px solid rgb(47, 47, 153);" title="click here to view important dates"> Important dates </a></li>
+    <li style="padding:10px;"><a href="workshops.html" style="border:3px solid rgb(47, 47, 153);"> Workshops </a></li>
+    <li style="padding:10px;">
+    <a href="reg.html" style="border:3px solid rgb(47, 47, 153);" title="click here to register and view contact details"> Registration and contact information </a></li>
+    
+    </ul>
+    <div class="picture">
+      <a href="reg.html" title="register now">
+      <img src="logo.png"></a>
+    </div> 
+  </body>
+  <br><br>
+  <footer>&copy <a href="https://www.ssn.edu.in/" > SSN </a></br> </footer>
+</html>
