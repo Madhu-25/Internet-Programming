@@ -1,0 +1,60 @@
+<web-app>
+
+<servlet>
+<servlet-name>mycontroller</servlet-name>
+<servlet-class>MVCDemo.Controller.LoginDetails</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>mycontroller</servlet-name>
+<url-pattern>/mycontrollerdemo</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>questionServlet</servlet-name>
+<servlet-class>MVCDemo.Controller.ExamDetails</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>questionServlet</servlet-name>
+<url-pattern>/questions</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>ExamReport</servlet-name>
+<servlet-class>MVCDemo.Controller.MarkDetails</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>ExamReport</servlet-name>
+<url-pattern>/finish</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>admin</servlet-name>
+	<servlet-class>MVCDemo.Controller.Admin</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>admin</servlet-name>
+	<url-pattern>/admin</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>RegisterServlet</servlet-name>
+	<servlet-class>MVCDemo.Controller.Registration</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>RegisterServlet</servlet-name>
+	<url-pattern>/register</url-pattern>
+</servlet-mapping>
+	
+
+<listener>
+	<listener-class>MVCDemo.Controller.SessionCounter</listener-class>
+</listener>
+
+
+</web-app>
