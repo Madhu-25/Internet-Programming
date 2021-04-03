@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>SSN-IC-2021-Registration-form</title>
+    <style>
+      body{
+        background-color : rgb(104, 174, 196);
+      }
+      footer{
+        
+        font-size: 10px;
+      }
+      label {
+        display: inline-block;
+        width:100px;
+        text-align: left;
+      }
+      
+      
+    </style>
+    <link href="css-reg/style1.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <h2> Student Registration </h2> 
+    <h6>Please enter the following details</h6><br><br><form>
+    <label> First Name: </label><input type="text" id="fname" placeholder="John" required><br><br>
+    <label> Last Name: </label><input type="text" id="lname" placeholder="Doe" required><br><br>
+    <label> Age: </label><input type="number" id="age" required><br><br>
+    <label> Gender: </label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label> University: </label><input type="text" id="univ" required><br><br>
+    
+   <label> Department: </label><input type="text" id="dept" ><br><br>
+    <label> Year: </label><input type="number" id="year" list="year-list">
+    <datalist id="year-list">
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+    </datalist><br><br>
+    <label> email: </label><input type="email" id="email" placeholder="abc@yahoo.com" ><br><br>
+    <label> Phone-number: </label><input type="tel" id="phone" pattern="91-[6-9][0-9]{9}" title="Enter mobile number" placeholder="91-XXXXXXXXXX" required><br><br>
+    <label> Pick your areas of interests: </label><br>
+    <input type="checkbox" id="field1" name="field1" value="Big Data">
+    <label for="feild1"> Big Data</label><br> 
+    <input type="checkbox" id="field2" name="field2" value="ML">
+    <label for="feild2"> ML </label><br>
+    <input type="checkbox" id="field13" name="field3" value="DL">
+    <label for="feild3"> DL </label><br>  
+    <input type="checkbox" id="field4" name="field4" value="AI">
+    <label for="feild4"> AI </label><br> 
+    <input type="checkbox" id="field5" name="field5" value="Cloud">
+    <label for="feild1"> Cloud </label><br> 
+    <label> Attach resume: </label><input type="file" id="resume" name="resume" multiple><br><br>
+    
+
+    <input type="submit" value="Submit">
+    <br><br></form>
+    <a href="test.html"> Take survey </a><br>
+    <h3>For more details regarding the event contact event organizer Smith - 91-XXXXXXXXXX.<br>Thank you</h3>
+  </body>
+  <footer>&copy <a href="https://www.ssn.edu.in/" > SSN </a></br> </footer>
+</html>
