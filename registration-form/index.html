@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hospital Registration</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <p id="time"></p>
+    <h3> Hospital Registration </h3>
+    <div id="formdiv">
+    <form id="reg" name="reg" onsubmit="return false;">
+    <label> User Name: </label><input type="text" id="name" placeholder="John Doe" pattern="[ A-Za-z]{1,15}" title="Enter your name" required onfocus="changeOutline();" onblur="changeBackground();" oninvalid="returnFocus(this);"><br><br> 
+    <label> Address: </label><br>
+    <textarea id="address" name="address" title="Enter your full address" rows="5" cols="20"></textarea><br><br> 
+    <label> Age: </label>
+    <input type="number" min="1" max="100" id="age" name="age" pattern="\d{2}" required onkeypress="alertNumber();"><br><br>
+    <label> DOB </label>
+    <input type="date" id="dob" id="dob" title=" Enter your date of birth" required><br><br>
+    <label> Gender: </label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label for="status">Marital Status</label>
+
+    <select name="status" id="status" onchange="displayStatus();">
+    <option value="single">Single</option>
+    <option value="married">Married</option>
+    <option value="widower">Widower</option>
+    <option value="divorced">Divorced</option>
+
+    </select>
+    <p id="sample"></p>
+    <label> Phone-number: </label><input type="tel" id="contact" pattern="\(\+91\)[0-9]{10}" title="Enter mobile number" placeholder="(+91)9234567891" oninvalid="alertPhone();" required><br><br>
+    <label for="addiction">Addiction: </label>
+    <textarea name="addiction" id="addiction" >
+    </textarea>
+    <br><br>
+    <ul id="drag-list">
+        <li class="drag" id="drug" draggable="true">Drugs</li>
+        <li class="drag" id="alcohol" draggable="true">Alcohol </li>
+        <li class="drag" id="smoking" draggable="true">Smoking </li>
+        <li class="drag" id="nil" draggable="true">N/A</li>
+      </ul>
+      
+    <br><input type="reset" value="Reset" id="reset" onclick="clearmsg();"> 
+      <input type="submit" value="Submit" id="submit" onclick="display();" ></form></div>
+
+  <div id="table1" ><table class  style="width:100% ">
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Age</th>
+    <th>Date Of Birth</th>
+    <th>Gender</th>
+    <th>Marital Status</th>
+    <th>Contact No</th>
+    <th>Addiction</th>
+  </tr>
+  <tr>
+    <td id="name1"></td>
+    <td id="address1"></td>
+    <td id="age1"></td>
+    <td id="dob1"></td>
+    <td id="gender1"></td>
+    <td id="status1"></td>
+    <td id="contact1"></td>
+    <td id="addiction1"></td>
+  </tr>
+
+</table></div>
+  </body>
+</html>
